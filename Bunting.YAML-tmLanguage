@@ -1,0 +1,23 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+
+name: Bunting
+scopeName: source.bunting
+fileTypes: [bunting]
+uuid: fb986475-22d6-4ed5-bb27-e6a36a004e87
+
+patterns:
+- comment: Integer constant
+  name: constant.numeric
+  match: '[0-9]+'
+
+- comment: Boolean constant
+  name: constant.language
+  match: 'true|false'
+
+- comment: Keywords
+  name: keyword.other
+  match: 'main|imm|print'
+
+- comment: Operators
+  name: keyword.operator
+  match: '\+|\*|>|&|:='

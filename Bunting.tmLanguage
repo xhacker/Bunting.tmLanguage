@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>bunting</string>
+	</array>
+	<key>name</key>
+	<string>Bunting</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Integer constant</string>
+			<key>match</key>
+			<string>[0-9]+</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Boolean constant</string>
+			<key>match</key>
+			<string>true|false</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>main|imm|print</string>
+			<key>name</key>
+			<string>keyword.other</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators</string>
+			<key>match</key>
+			<string>\+|\*|&gt;|&amp;|:=</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.bunting</string>
+	<key>uuid</key>
+	<string>fb986475-22d6-4ed5-bb27-e6a36a004e87</string>
+</dict>
+</plist>
