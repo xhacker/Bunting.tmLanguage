@@ -54,9 +54,17 @@
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>\b(main|imm|mut|print|nl)\b</string>
+			<string>\b(main|imm|mut|mutate|print|nl)\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Types</string>
+			<key>match</key>
+			<string>\b(bool|char|int|float)\b</string>
+			<key>name</key>
+			<string>storage.type</string>
 		</dict>
 		<dict>
 			<key>comment</key>

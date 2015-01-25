@@ -27,8 +27,12 @@ patterns:
   match: "'[\x20-\x7E]"
 
 - comment: Keywords
-  match: '\b(main|imm|mut|print|nl)\b'
+  match: '\b(main|imm|mut|mutate|print|nl)\b'
   name: keyword.other
+
+- comment: Types
+  match: '\b(bool|char|int|float)\b'
+  name: storage.type
 
 - comment: Operators
   name: keyword.operator
