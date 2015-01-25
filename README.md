@@ -1,4 +1,4 @@
-# Syntax Highlighting for Bunting Language
+# Bunting Highlight
 
-Currently only supports Bunting-0.
+Syntax highlighting for Bunting language. Currently supports Bunting-1.
 

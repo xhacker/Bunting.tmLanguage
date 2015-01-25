@@ -6,18 +6,30 @@ fileTypes: [bunting]
 uuid: fb986475-22d6-4ed5-bb27-e6a36a004e87
 
 patterns:
+- comment: Comment
+  name: comment.line.double-slash
+  match: '//[^/\n]*(/[^/\n]+)*(//|/\n|\n)'
+
+- comment: Floating constant
+  name: constant.numeric
+  match: '\-?([0-9]+\.[0-9]+)(e(\+|\-)?[0-9]+)?'
+
 - comment: Integer constant
   name: constant.numeric
-  match: '[0-9]+'
+  match: '\-?[0-9]+'
 
 - comment: Boolean constant
   name: constant.language
   match: 'true|false'
 
+- comment: Character constant
+  name: constant.character
+  match: "'[\x20-\x7E]"
+
 - comment: Keywords
   name: keyword.other
-  match: 'main|imm|print'
+  match: 'main|imm|mut|print'
 
 - comment: Operators
   name: keyword.operator
-  match: '\+|\*|>|&|:='
+  match: '\+|\-|\*|/|<|<=|==|!=|>|>=|&|:|:='

@@ -12,9 +12,25 @@
 	<array>
 		<dict>
 			<key>comment</key>
+			<string>Comment</string>
+			<key>match</key>
+			<string>//[^/\n]*(/[^/\n]+)*(//|/\n|\n)</string>
+			<key>name</key>
+			<string>comment.line.double-slash</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Floating constant</string>
+			<key>match</key>
+			<string>\-?([0-9]+\.[0-9]+)(e(\+|\-)?[0-9]+)?</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Integer constant</string>
 			<key>match</key>
-			<string>[0-9]+</string>
+			<string>\-?[0-9]+</string>
 			<key>name</key>
 			<string>constant.numeric</string>
 		</dict>
@@ -28,9 +44,17 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Character constant</string>
+			<key>match</key>
+			<string>'[ -~]</string>
+			<key>name</key>
+			<string>constant.character</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>main|imm|print</string>
+			<string>main|imm|mut|print</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
@@ -38,7 +62,7 @@
 			<key>comment</key>
 			<string>Operators</string>
 			<key>match</key>
-			<string>\+|\*|&gt;|&amp;|:=</string>
+			<string>\+|\-|\*|/|&lt;|&lt;=|==|!=|&gt;|&gt;=|&amp;|:|:=</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
