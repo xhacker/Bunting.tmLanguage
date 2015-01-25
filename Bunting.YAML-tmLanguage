@@ -11,28 +11,24 @@ patterns:
   match: '//[^/\n]*(/[^/\n]+)*(//|/\n|\n)'
 
 - comment: Floating constant
-  match: '[^a-zA-Z_~](\-?([0-9]+\.[0-9]+)(e(\+|\-)?[0-9]+)?)'
-  captures:
-    '1': {name: constant.numeric}
+  match: '\b(\-?([0-9]+\.[0-9]+)(e(\+|\-)?[0-9]+)?)'
+  name: constant.numeric
 
 - comment: Integer constant
-  match: '[^a-zA-Z_~](\-?[0-9]+)'
-  captures:
-    '1': {name: constant.numeric}
+  match: '\b(\-?[0-9]+)'
+  name: constant.numeric
 
 - comment: Boolean constant
-  match: '[^a-zA-Z_~0-9](true|false)[^a-zA-Z_~0-9]'
-  captures:
-    '1': {name: constant.language}
+  match: '\b(true|false)\b'
+  name: constant.language
 
 - comment: Character constant
   name: constant.character
   match: "'[\x20-\x7E]"
 
 - comment: Keywords
-  match: '(^| )(main|imm|mut|print) '
-  captures:
-    '2': {name: keyword.other}
+  match: '\b(main|imm|mut|print|nl)\b'
+  name: keyword.other
 
 - comment: Operators
   name: keyword.operator

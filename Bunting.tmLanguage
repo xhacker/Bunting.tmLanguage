@@ -19,46 +19,28 @@
 			<string>comment.line.double-slash</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.numeric</string>
-				</dict>
-			</dict>
 			<key>comment</key>
 			<string>Floating constant</string>
 			<key>match</key>
-			<string>[^a-zA-Z_~](\-?([0-9]+\.[0-9]+)(e(\+|\-)?[0-9]+)?)</string>
+			<string>\b(\-?([0-9]+\.[0-9]+)(e(\+|\-)?[0-9]+)?)</string>
+			<key>name</key>
+			<string>constant.numeric</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.numeric</string>
-				</dict>
-			</dict>
 			<key>comment</key>
 			<string>Integer constant</string>
 			<key>match</key>
-			<string>[^a-zA-Z_~](\-?[0-9]+)</string>
+			<string>\b(\-?[0-9]+)</string>
+			<key>name</key>
+			<string>constant.numeric</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-			</dict>
 			<key>comment</key>
 			<string>Boolean constant</string>
 			<key>match</key>
-			<string>[^a-zA-Z_~0-9](true|false)[^a-zA-Z_~0-9]</string>
+			<string>\b(true|false)\b</string>
+			<key>name</key>
+			<string>constant.language</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -69,18 +51,12 @@
 			<string>constant.character</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other</string>
-				</dict>
-			</dict>
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>(^| )(main|imm|mut|print) </string>
+			<string>\b(main|imm|mut|print|nl)\b</string>
+			<key>name</key>
+			<string>keyword.other</string>
 		</dict>
 		<dict>
 			<key>comment</key>
