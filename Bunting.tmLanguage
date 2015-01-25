@@ -62,7 +62,7 @@
 			<key>comment</key>
 			<string>Operators</string>
 			<key>match</key>
-			<string>\+|\-|\*|/|&lt;|&lt;=|==|!=|&gt;|&gt;=|&amp;|:|:=</string>
+			<string>\+|\-|\*|/|&lt;=|&lt;|==|!=|&gt;=|&gt;|&amp;|:=|:</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>

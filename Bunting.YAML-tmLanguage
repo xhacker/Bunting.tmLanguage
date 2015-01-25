@@ -32,4 +32,4 @@ patterns:
 
 - comment: Operators
   name: keyword.operator
-  match: '\+|\-|\*|/|<|<=|==|!=|>|>=|&|:|:='
+  match: '\+|\-|\*|/|<=|<|==|!=|>=|>|&|:=|:'
