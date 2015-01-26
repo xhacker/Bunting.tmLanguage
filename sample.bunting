@@ -1,0 +1,11 @@
+main {
+    imm afloat := 5 : float;
+    imm achar := 'c;
+    mut abool := true;
+
+    print afloat, achar, abool, nl&;
+
+    // this is a comment
+
+    // short comment // imm num = 1.0e-623;
+}
