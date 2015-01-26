@@ -14,7 +14,7 @@
 			<key>comment</key>
 			<string>Comment</string>
 			<key>match</key>
-			<string>//[^/\n]*(/[^/\n]+)*(//|/\n|\n)</string>
+			<string>//[^/\n]*(/[^/\n]+)*(//|/\n|\n|$)</string>
 			<key>name</key>
 			<string>comment.line.double-slash</string>
 		</dict>

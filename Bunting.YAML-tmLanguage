@@ -8,7 +8,7 @@ uuid: fb986475-22d6-4ed5-bb27-e6a36a004e87
 patterns:
 - comment: Comment
   name: comment.line.double-slash
-  match: '//[^/\n]*(/[^/\n]+)*(//|/\n|\n)'
+  match: '//[^/\n]*(/[^/\n]+)*(//|/\n|\n|$)'
 
 - comment: Floating constant
   match: '\b(\-?([0-9]+\.[0-9]+)(e(\+|\-)?[0-9]+)?)'
