@@ -1,0 +1,63 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+
+name: ASM
+scopeName: source.asm
+fileTypes: [asm]
+uuid: 8abdcdbc-0c41-4971-b9c0-13b000dcdc9e
+
+patterns:
+- comment: Comment
+  name: comment.line.percentage
+  match: '%%.*'
+
+- comment: Comment
+  name: comment.line.double-slash
+  match: '//.*'
+
+- comment: Comment
+  name: comment.line.number-sign
+  match: '#.*'
+
+- comment: Numeric constant
+  match: '\b(\-?[0-9]+(\.[0-9]+)?(e[\+\-][0-9]+)?)\b'
+  name: constant.numeric
+
+- comment: Label
+  name: variable.other
+  match: '\$.+'
+
+- comment: Keywords
+  match: '\b(Add|Subtract|Negate|Multiply|Divide|Remainder)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(FAdd|FSubtract|FNegate|FMultiply|FDivide)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(And|Or|Nand|Nor|Xor|BEqual|BNegate)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(BTAnd|BTOr|BTNand|BTNor|BTXor|BTEqual|BTNegate)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(ConvertF|ConvertI)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(Duplicate|Exchange|Pop|PushI|PushD|PushF|PushPC|PopPC|LoadC|LoadI|LoadF|StoreC|StoreI|StoreF|Memtop)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(Label|Jump|JumpFalse|JumpTrue|JumpNeg|JumpPos|JumpFNeg|JumpFPos|JumpFZero|Call|JumpV|CallV|Return|Halt)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(DLabel|DataC|DataI|DataF|DataS|DataZ|DataD|PStack)\b'
+  name: keyword.other
+
+- comment: Keywords
+  match: '\b(Printf|Nop)\b'
+  name: keyword.other
