@@ -26,8 +26,12 @@ patterns:
   name: constant.character
   match: "'[\x20-\x7E]"
 
+- comment: String constant
+  name: string.quoted.double
+  match: '"[^"\n]*"'
+
 - comment: Keywords
-  match: '\b(main|imm|mut|mutate|print|nl)\b'
+  match: '\b(main|imm|mut|mutate|print|nl|if|else|while|create|copy|length)\b'
   name: keyword.other
 
 - comment: Types
@@ -36,4 +40,4 @@ patterns:
 
 - comment: Operators
   name: keyword.operator
-  match: '\+|\-|\*|/|<=|<|==|!=|>=|>|&|:=|:'
+  match: '\+|\-|\*|/|<=|<|==|!=|>=|>|&&|\|\||!|&|:=|:|\$'

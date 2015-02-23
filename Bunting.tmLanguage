@@ -52,9 +52,17 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>String constant</string>
+			<key>match</key>
+			<string>"[^"\n]*"</string>
+			<key>name</key>
+			<string>string.quoted.double</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>\b(main|imm|mut|mutate|print|nl)\b</string>
+			<string>\b(main|imm|mut|mutate|print|nl|if|else|while|create|copy|length)\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
@@ -70,7 +78,7 @@
 			<key>comment</key>
 			<string>Operators</string>
 			<key>match</key>
-			<string>\+|\-|\*|/|&lt;=|&lt;|==|!=|&gt;=|&gt;|&amp;|:=|:</string>
+			<string>\+|\-|\*|/|&lt;=|&lt;|==|!=|&gt;=|&gt;|&amp;&amp;|\|\||!|&amp;|:=|:|\$</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
