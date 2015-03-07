@@ -31,11 +31,19 @@ patterns:
   match: '"[^"\n]*"'
 
 - comment: Keywords
-  match: '\b(main|imm|mut|mutate|print|nl|if|else|while|create|copy|length)\b'
+  match: '\b(if|else|while|for|return)\b'
+  name: keyword.control
+
+- comment: Keywords
+  match: '\b(main|mutate|print|nl|create|copy|length|def|type|call|to|in)\b'
   name: keyword.other
 
+- comment: Keywords
+  match: '\b(imm|mut)\b'
+  name: storage.modifier
+
 - comment: Types
-  match: '\b(bool|char|int|float)\b'
+  match: '\b(bool|char|int|float|void)\b'
   name: storage.type
 
 - comment: Operators

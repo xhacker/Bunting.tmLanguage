@@ -62,15 +62,31 @@
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>\b(main|imm|mut|mutate|print|nl|if|else|while|create|copy|length)\b</string>
+			<string>\b(if|else|while|for|return)\b</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>\b(main|mutate|print|nl|create|copy|length|def|type|call|to|in)\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>\b(imm|mut)\b</string>
+			<key>name</key>
+			<string>storage.modifier</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Types</string>
 			<key>match</key>
-			<string>\b(bool|char|int|float)\b</string>
+			<string>\b(bool|char|int|float|void)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>

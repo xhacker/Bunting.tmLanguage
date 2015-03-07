@@ -1,11 +1,10 @@
 main {
-    imm afloat := 5 : float;
-    imm achar := 'c;
+    imm answer := 42 : float;
     mut string := "blue";
 
-    print afloat, achar, $string, nl&;
+    print answer, $string, nl&;
 
-    if (1 + 1 == 3 || 2 + 2 == 4) {
+    if (answer == 42 && 1 + 1 == 2) {
         mut A := create [int](0);
         imm charArray := ['x, 'h, 'a, 'c, 'k, 'e, 'r];
     }
