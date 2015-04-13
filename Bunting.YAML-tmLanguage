@@ -31,11 +31,11 @@ patterns:
   match: '"[^"\n]*"'
 
 - comment: Keywords
-  match: '\b(if|else|while|for|return)\b'
+  match: '\b(if|else|while|for|return|break|continue)\b'
   name: keyword.control
 
 - comment: Keywords
-  match: '\b(main|mutate|print|nl|create|copy|length|def|type|call|to|in)\b'
+  match: '\b(main|mutate|print|nl|create|copy|length|def|type|call|to|in|class|release|user|this)\b'
   name: keyword.other
 
 - comment: Keywords

@@ -62,7 +62,7 @@
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>\b(if|else|while|for|return)\b</string>
+			<string>\b(if|else|while|for|return|break|continue)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -70,7 +70,7 @@
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>\b(main|mutate|print|nl|create|copy|length|def|type|call|to|in)\b</string>
+			<string>\b(main|mutate|print|nl|create|copy|length|def|type|call|to|in|class|release|user|this)\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
